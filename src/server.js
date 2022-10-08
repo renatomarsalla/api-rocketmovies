@@ -8,7 +8,7 @@ const { routes } = require("./routes/index");
 const { uploads_folder } = require("./configs/upload");
 
 // const PORT = 3333;
-const PORT = process.env.SERVER_PORT;
+const PORT = process.env.PORT;
 const cors = require("cors");
 
 const app = express();
@@ -37,16 +37,6 @@ app.use((error, request, response, next) => {
     "message": "internal server error"
   })
 });
-
-
-
-
-
-
-
-
-
-
 
 
 app.listen(PORT, () => console.log(`Listening the port ${PORT}`));
