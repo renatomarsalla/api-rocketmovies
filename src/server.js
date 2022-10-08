@@ -8,7 +8,7 @@ const { routes } = require("./routes/index");
 const { uploads_folder } = require("./configs/upload");
 
 // const PORT = 3333;
-const PORT = process.env.SERVER_PORT || 3333;
+const PORT = process.env.SERVER_PORT;
 const cors = require("cors");
 
 const app = express();
